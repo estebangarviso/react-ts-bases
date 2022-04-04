@@ -1,5 +1,3 @@
-import React from 'react'
+import classNames from 'classnames/bind'
 
-export const Bind = () => {
-  return <div>Bind</div>
-}
+export const bind = (styles: Record<string, string>) => classNames.bind(styles)

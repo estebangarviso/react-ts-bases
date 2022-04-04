@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { BrowserRouter, Link, Route } from 'react-router-dom'
+import styles from './app.module.css'
 import { Styling } from './styling'
 import { BindStylesCustomProperty } from './bind-styles-custom-property'
 import { UseState } from './hooks/use-state'
@@ -22,8 +23,8 @@ export const App: FC = () => {
   return (
     <BrowserRouter>
       <Route path="/" exact>
-        <main>
-          <header>
+        <main className={styles.wrapper}>
+          <header className={styles.header}>
             <Link to="use-state">Use State</Link>
             <Link to="use-state-inmutable">Use State Inmutable</Link>
             <Link to="number-input">Number Input</Link>
