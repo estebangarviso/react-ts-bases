@@ -13,7 +13,7 @@ import { ThemeContextComponent } from './context/theme-context'
 import { CustomHooks } from './hooks/custom-hooks'
 import { UseReducer } from './reducer/use-reducer'
 import { UseReducerWithOptions } from './reducer/use-reducer-with-options'
-import ClassComponent from './hooks/class-component'
+import { ClassComponent } from './hooks/class-component'
 import { AppErrorBoundary } from './error-boundaries/error-boundaries'
 import { Timer } from './hooks/timer'
 
@@ -25,7 +25,7 @@ export const App: FC = () => {
           <header className={styles.header}>
             <Link to="use-state">Use State</Link>
             <Link to="use-state-inmutable">Use State Inmutable</Link>
-            <Link to="number-input">Number Input</Link>
+            <Link to="numeric-input">Numeric Input</Link>
             <Link to="styling">Styling</Link>
             <Link to="context">Context</Link>
             <Link to="theme-context">Theme Context</Link>
@@ -81,7 +81,7 @@ export const App: FC = () => {
         <ClassComponent />
       </Route>
 
-      <Route path="/bind-style-custom-property">
+      <Route path="/bind-styles-custom-property">
         <BindStylesCustomProperty />
       </Route>
       <Route path="/error-boundary">
